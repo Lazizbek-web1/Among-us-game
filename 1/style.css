@@ -1,0 +1,55 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+h1 {
+  /* 
+  display: none; */
+  padding-top: 30vh;
+  margin: auto;
+  text-align: center;
+  font-size: 3.5rem;
+  button {
+    width: 300px;
+    padding: 25px;
+    margin-top: 12vh;
+    text-align: center;
+    font-size: 1.5rem;
+    border: 0;
+    border-radius: 10px;
+  }
+}
+#gameContainer {
+  /* 
+  display: none; */
+  overflow: hidden;
+  width: 98.5vw;
+  display: none;
+  #baseContainer {
+    #map {
+      position: absolute;
+      left: -1200px;
+      top: 0;
+      width: 4000px; /* 
+    animation: move 0.5s infinite; */
+    }
+    .area {
+      width: 735px;
+      height: 80px;
+      background-color: aquamarine;
+      position: fixed;
+      top: 10px;
+      left: -1200px;
+      z-index: 1;
+    }
+  }
+  #imposter {
+    position: fixed;
+    width: 50px;
+    top: 300px;
+    left: 600px;
+    z-index: 3;
+  }
+}
